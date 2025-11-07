@@ -1,0 +1,299 @@
+/* font*/
+@font-face {
+	font-family: "Bricolage Grotesque";
+	font-style: normal;
+	font-weight: 300;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMnuECoAsyJBOm_OJBCewA1Xp.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+		U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: "Bricolage Grotesque Bold";
+	font-style: normal;
+	font-weight: 800;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMnuECoAsyJBOm_OJ2iCwA1Xp.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+		U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* format */
+* {
+	text-align: center;
+	font-family: "Bricolage Grotesque";
+	font-size: 1.2rem;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #f2ece4;
+	cursor: url(https://cdn.custom-cursor.com/db/13636/32/color-pixels-summer-green-cursor.png),
+		default !important;
+}
+
+.borderless {
+	border-width: 0;
+}
+
+/*navbar*/
+.topnav {
+	overflow: hidden;
+	font-family: "Bricolage Grotesque";
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	top: 0;
+}
+.topnav a,
+.topnav span {
+	font-family: "Bricolage Grotesque";
+	color: #050315;
+	border: 2px solid #050315;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: center;
+	justify-content: center;
+	height: 3em;
+	cursor: url(https://cdn.custom-cursor.com/db/13635/32/color-pixels-summer-green-pointer.png),
+		default !important;
+}
+.space {
+	border-bottom: 2px solid #050315;
+	border-right: 2px solid #050315;
+	width: stretch;
+	height: auto;
+}
+.left {
+	float: left;
+	border-top-width: 0;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	display: inline-flex;
+}
+
+.right {
+	float: right;
+	border-top-width: 0;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+	display: inline-flex;
+	position: relative;
+	font-size: 2rem;
+}
+.topnav a:hover,
+.topnav span:hover {
+	font-family: "Bricolage Grotesque";
+	background-color: #40403f;
+	color: #f2ece4;
+}
+.topnav a.active {
+	background-color: #8ace00;
+	color: #050315;
+}
+
+main {
+	font-size: 25px;
+	padding: 5px;
+}
+
+.title{
+	width: 600px;
+}
+.up {
+	justify-content: space-evenly;
+	display: flex;
+	padding: 10rem 5rem 3rem;
+	height: max-content;
+	align-items: center;
+	border-bottom: 2px solid #050315;
+}
+
+h1 {
+	font-family: "Bricolage Grotesque Bold", sans-serif;
+	font-size: 3.8em;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
+	display: flex;
+	order: 1;
+	text-align: start;
+}
+
+.description {
+	border: 2px solid #050315;
+	background-color: #f2ece4;
+	padding: 2rem;
+	font-size: 3em;
+	width: 50%;
+	flex: 2 1 200px;
+	order: 2;
+	float: right;
+	text-align: left;
+	justify-content: center;
+	display: flex;
+	margin: 0 50px;
+}
+
+p {
+	text-align: justify;
+	text-align: center;
+}
+
+.button {
+	padding: 20px;
+	margin: 20px;
+	border: 2px solid #050315;
+	height: 3em;
+	border-radius: 3px;
+	color: #050315;
+	background-color: #8ace00;
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: space-evenly;
+	cursor: url(https://cdn.custom-cursor.com/db/13635/32/color-pixels-summer-green-pointer.png),
+		default !important;
+}
+
+.button:hover {
+	font-family: "Bricolage Grotesque";
+	background-color: #40403f;
+	color: #f2ece4;
+}
+
+/* light/dark mode*/
+.dark-mode {
+	* {
+		background-color: #050315;
+		color: #f2ece4;
+	}
+
+	.borderless {
+		border-width: 0;
+	}
+
+	/*navbar*/
+	.topnav a,
+	.topnav span {
+		color: #f2ece4;
+		border: 2px solid #f2ece4;
+		border-left-width: 0px;
+		border-top-width: 0px;
+	}
+	.space {
+		border-bottom: 2px solid #f2ece4;
+		border-right: 2px solid #f2ece4;
+	}
+
+	.topnav a:hover,
+	.topnav span:hover {
+		font-family: "Bricolage Grotesque";
+		background-color: #40403f;
+		color: #f2ece4;
+	}
+	.topnav a.active {
+		background-color: #8ace00;
+		color: #050315;
+	}
+
+	.up {
+		border-bottom-color: #f2ece4;
+	}
+
+	.description {
+		border: 2px solid #f2ece4;
+		background-color: #050315;
+		order: 2;
+		float: right;
+		text-align: justify;
+		justify-content: center;
+		display: flex;
+		margin: 0 50px;
+	}
+
+	p {
+		text-align: justify;
+		text-align: center;
+	}
+
+	.button {
+		padding: 20px;
+		margin: 20px;
+		border: 2px solid #050315;
+		height: 3em;
+		border-radius: 3px;
+		color: #050315;
+		background-color: #8ace00;
+		text-decoration: none;
+		display: inline-flex;
+		justify-content: space-evenly;
+		cursor: url(https://cdn.custom-cursor.com/db/13635/32/color-pixels-summer-green-pointer.png),
+			default !important;
+	}
+
+	.button:hover {
+		background-color: #40403f;
+		color: #f2ece4;
+	}
+}
+
+/*responsive*/
+@media only screen and (max-width: 1024px) {
+	* {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 1rem;
+		justify-content: center;
+	}
+
+	main {
+		font-size: 25px;
+		padding: 3em 1em;
+	}
+	
+	.title{
+		padding-bottom: 3rem;
+		width:auto;
+	}
+
+	.up {
+		flex-direction: column;
+		padding: 5px;
+		border-bottom: 0;
+	}
+
+	.description {
+		border: 2px solid #050315;
+		flex: 2 1;
+		width: 100%;
+		order: 2;
+		float: right;
+		text-align: left;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 3em;
+		/*margin: 0 50px;*/
+
+		
+	}
+
+}
