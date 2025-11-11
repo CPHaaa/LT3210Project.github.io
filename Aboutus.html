@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Universe | About Us</title>
+    <link rel="stylesheet" href="AboutUs.css">
+    
+<body>
+    <!-- Starry background -->
+    <div class="stars" id="stars"></div>
+    
+    <!-- Floating music notes -->
+    <div class="music-note" style="left: 10%; animation-delay: 0s;">♪</div>
+    <div class="music-note" style="left: 20%; animation-delay: 2s;">♫</div>
+    <div class="music-note" style="left: 30%; animation-delay: 4s;">♩</div>
+    <div class="music-note" style="left: 40%; animation-delay: 6s;">♪</div>
+    <div class="music-note" style="left: 50%; animation-delay: 8s;">♫</div>
+    <div class="music-note" style="left: 60%; animation-delay: 10s;">♩</div>
+    <div class="music-note" style="left: 70%; animation-delay: 12s;">♪</div>
+    <div class="music-note" style="left: 80%; animation-delay: 14s;">♫</div>
+    <div class="music-note" style="left: 90%; animation-delay: 16s;">♩</div>
+
+    <header>
+        <div class="logo">
+            <i class="fas fa-music"></i>
+            Music Taste & Social Identity
+        </div>
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Aboutus.html" class="active">About Us</a>
+            <a href="#">Survey</a>
+            <a href="#">Graphs</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="about-section">
+            <h1>About Us</h1>
+            
+            <p>Welcome to our website, we are the students of City University of Hong Kong.</p>
+            
+            <p>This is our Final Group Project of Course LT3210---Electronic Publishing.</p>
+            
+            <p>Our project aims to explore the relationship between music taste and social identity through engaging surveys and insightful graphs.</p>
+
+            <p>The following is our team.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <div class="member-img">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3 class="member-name">Lala, Kwok Sin Man</h3>
+                    <p class="member-role">Criminology & Sociology Student</p>
+                    <p>A Year 3 Student</p>
+                    <p>Enjoy exploring new opportunities and challenges that help me expand my skills and knowledge.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-img">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3 class="member-name">Cat,</h3>
+                    <p class="member-role">Psychology Student</p>
+                    <p></p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-img">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3 class="member-name">Aruzhan SHYNGAZIYEVA</h3>
+                    <p class="member-role">Criminology & Sociology Student</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Aboutus.html" class="active">About Us</a>
+            <a href="#">Survey</a>
+            <a href="#">Graphs</a>
+        </nav>
+            
+                </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+       <p>Thanks for visiting our page!</p>
+        </div>
+
+        
+    </footer>
+
+    <script>
+        // Create stars for the background
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            const starCount = 200;
+            
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                
+                // Random position
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                
+                // Random size
+                const size = Math.random() * 3;
+                
+                // Random animation delay
+                const delay = Math.random() * 5;
+                
+                star.style.left = `${x}%`;
+                star.style.top = `${y}%`;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.animationDelay = `${delay}s`;
+                
+                starsContainer.appendChild(star);
+            }
+        }
+        
+        // Initialize when page loads
+        window.addEventListener('load', createStars);
+    </script>
+</body>
+</html>
