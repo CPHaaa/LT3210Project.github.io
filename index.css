@@ -219,6 +219,13 @@ footer {
    height: auto;
 }
 
+	
+
+.credit {
+    background-color: #171a70;
+		color: white;
+	}
+
 .topnav {
     background-color: #171a70;}
 
@@ -318,4 +325,5 @@ footer {
         font-size: 1rem;
         justify-content: center;
     }
+
 }
