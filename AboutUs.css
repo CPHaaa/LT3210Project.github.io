@@ -168,6 +168,7 @@
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s;
+       border-radius: 50% 
         }
 
          .team-member:hover .member-img img {
@@ -236,3 +237,4 @@
                 font-size: 2rem;
             }
         }
+
