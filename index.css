@@ -131,6 +131,10 @@ p.desc{
     padding-top: 1.2em;
 }
 
+a{
+	color: #f8bcd1;
+}
+
 .button {
     background-position-y: -0%;
     background-image: linear-gradient(180deg, transparent 50%, #171a70 50%) !important;
@@ -270,9 +274,7 @@ footer {
 
 }
 
-a{
-	color: #f8bcd1;
-}
+
 
 /*grain*/
 
@@ -331,4 +333,5 @@ a{
     }
 
 }
+
 
