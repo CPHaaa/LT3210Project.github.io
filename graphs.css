@@ -106,12 +106,11 @@ main {
 	z-index: 10000;
 }
 
-/*
 .neon {
 	-webkit-animation: glow 1s ease-in-out infinite alternate;
 	-moz-animation: glow 1s ease-in-out infinite alternate;
 	animation: glow 1s ease-in-out infinite alternate;
-}*/
+}
 
 .description {
 	color: white;
@@ -606,3 +605,4 @@ a{
 		z-index: -1;
 	}
 }
+
