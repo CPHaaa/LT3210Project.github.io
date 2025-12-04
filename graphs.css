@@ -1,0 +1,608 @@
+@import url("https://fonts.cdnfonts.com/css/lixdu-3");
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+* {
+	font-family: "Audiowide";
+	font-size: 1.2rem;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	left: 0;
+	top: 0;
+	cursor: url(https://cur.cursors-4u.net/others/oth-6/oth510.ani),
+		url(https://cur.cursors-4u.net/others/oth-6/oth510.png), auto !important;
+}
+
+main {
+	background: radial-gradient(
+		circle at bottom,
+		#f8bcd1 0,
+		#7a67ad 50%,
+		#171a70 100%
+	);
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+}
+
+/*nav*/
+
+.topnav {
+	background-color: #7a67ad;
+	overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 2;
+	overflow-x: auto;
+}
+
+.left {
+	float: left;
+	width: max-content;
+	border-top-width: 0;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	display: inline-flex;
+}
+
+.space {
+	width: stretch;
+	height: auto;
+}
+
+.right {
+	float: right;
+	border-top-width: 0;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+	display: inline-flex;
+	position: relative;
+	font-size: 2rem;
+}
+
+.topnav a,
+.topnav span {
+	color: white;
+	padding: 20px;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: center;
+	justify-content: center;
+	height: 3em;
+}
+
+.topnav a:hover,
+.topnav span:hover {
+	background-color: #171a70;
+	color: #f8bcd1;
+}
+
+.topnav a.active {
+	background-color: #171a70;
+	color: #f8bcd1;
+}
+
+/*main*/
+
+.title {
+	font-family: "lixdu", display;
+	line-height: 1.8;
+	font-size: 3rem;
+	padding: 6em 0;
+	padding-bottom: 10em;
+	height: 100vh;
+	margin: auto;
+	color: white;
+	background-clip: text;
+	-webkit-background-clip: text;
+	z-index: 10000;
+}
+
+/*
+.neon {
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}*/
+
+.description {
+	color: white;
+	background-color: rgba(23, 26, 112, 0.4);
+	width: 70%;
+	margin: 0 auto;
+	padding: 1em;
+	border-radius: 25px;
+	text-align: start;
+	margin-bottom: 3em;
+}
+
+h2 {
+	font-family: "lixdu", display;
+	font-size: 1.5rem;
+	color: white;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+
+p.desc {
+	padding-top: 1.2em;
+}
+
+.button {
+	background-position-y: -0%;
+	background-image: linear-gradient(
+		180deg,
+		transparent 50%,
+		#171a70 50%
+	) !important;
+	transition: all 0.2s ease;
+	background-size: auto 190%;
+	text-decoration: none;
+	padding: 20px;
+	margin: 20px;
+	height: 3em;
+	border-radius: 3px;
+	color: #171a70;
+	display: inline-flex;
+	justify-content: space-evenly;
+}
+
+.button:hover {
+	background-color: #171a70;
+	background-position-y: 100%;
+	color: #f8bcd1;
+	transition: all 0.1s ease;
+}
+
+footer {
+	color: white;
+	background-color: #7a67ad;
+	height: max-content;
+	text-align: center;
+}
+
+.credit {
+	margin: auto;
+}
+
+/*survey specific*/
+
+.top {
+	padding-top: 5em;
+}
+
+/*carousal
+
+.profile_carousel {
+	overflow-y: hidden;
+	width: 70vw;
+	height: 300px;
+	position: relative;
+	margin: auto;
+}
+
+ul {
+	width: 70vw;
+	height: 300px;
+	padding: 20px;
+	bottom: -17px;
+	display: flex;
+	gap: 4vw;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	z-index: 1;
+	position: absolute;
+	anchor-name: --my-carousel;
+	scroll-marker-group: after;
+}
+
+ul::scroll-button(*) {
+	border: 0;
+	font-size: 2rem;
+	background: none;
+	color: white;
+	opacity: 0.7;
+	cursor: pointer;
+	position: absolute;
+	position-anchor: --my-carousel;
+}
+
+ul::scroll-button(*):hover,
+ul::scroll-button(*):focus {
+	opacity: 1;
+}
+
+ul::scroll-button(*):active {
+	translate: 1px 1px;
+}
+
+ul::scroll-button(*):disabled {
+	opacity: 0.2;
+	cursor: unset;
+}
+
+ul::scroll-button(left) {
+	content: "◄";
+	right: calc(anchor(left) - 70px);
+	bottom: calc(anchor(top) - 175px);
+	z-index: 2;
+}
+
+ul::scroll-button(right) {
+	content: "►";
+	left: calc(anchor(right) - 70px);
+	bottom: calc(anchor(top) - 175px);
+	z-index: 2;
+}
+
+ul::scroll-marker-group {
+	position: absolute;
+	position-anchor: --my-carousel;
+	top: calc(anchor(bottom) - 70px);
+	justify-self: anchor-center;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.c {
+	list-style-type: none;
+	background-color: rgba(23, 26, 112, 0.4);
+	color: white;
+	border-radius: 25px;
+	padding: 20px;
+	flex: 0 0 100%;
+	scroll-snap-align: center;
+	z-index: 1;
+	float: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 50px;
+}
+
+.c::scroll-marker {
+	content: "";
+	width: 16px;
+	height: 16px;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+
+li::scroll-marker:target-current {
+	background-color: #fff;
+}
+
+.pfp {
+	height: 200px;
+	width: 500px;
+	margin-left: 30px;
+	object-fit: cover;
+	overflow: hidden;
+	padding: 0;
+}
+
+.pfpDesc {
+	margin-left: 30px;
+}
+
+.pfpName {
+	font-size: 1.5em;
+	color: #f8bcd1;
+}
+*/
+/*questions
+
+.subtitle {
+	padding: 1.2em 0;
+}
+
+.Questions {
+	padding: 0 20px;
+}
+
+.q {
+	padding: 10px 0;
+	text-align: left;
+}
+*/
+/*graphs specific*/
+
+.container {
+	font-size: 1.2rem;
+}
+
+.figure {
+	display: flex;
+	flex-direction: row;
+	grid-area: figure;
+	width: 300px;
+}
+
+figcaption {
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+img {
+	width: 
+	400px;
+	height: 250px;
+	object-fit: fill;
+	padding: 5px;
+}
+
+h4 {
+	font-style: italic;
+}
+
+.resultDesc {
+	padding-bottom: 2em;
+	flex-grow: 2;
+	grid-area: desc;
+}
+
+ul{
+	font-size: 0.7em;
+	overflow: hidden;
+}
+table {
+	text-align: start;
+	width: 100%;
+	border-width: 0;
+	border-spacing: 5px;
+	padding: 5px;
+	border-collapse: separate;
+	border-radius: 25px;
+}
+
+th {
+	background-color: rgba(23, 26, 112, 0.4);
+	text-align: start;
+	padding: 5px 10px;
+}
+
+td {
+	background-color: rgba(248, 188, 209, 0.6);
+	padding: 5px 10px;
+}
+
+i {
+	font-size: 0.7em;
+}
+
+/* Floating music notes */
+.music-note {
+	position: absolute;
+	font-size: 2rem;
+	opacity: 0.7;
+	color: white;
+	animation: float 10s infinite linear;
+}
+
+a{
+	color:#f8bcd1;
+}
+@keyframes float {
+	0% {
+		transform: translateY(-100px) rotate(0deg);
+	}
+
+	100% {
+		transform: translateY(40em) rotate(360deg);
+	}
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 10px;
+	}
+
+	to {
+		text-shadow: 0 0 30px #fff;
+	}
+}
+
+/* light/dark mode*/
+.dark-mode {
+	main {
+		background: radial-gradient(
+			circle at bottom,
+			#7a67ad 0,
+			#171a70 50%,
+			#000 100%
+		);
+	}
+
+	.topnav {
+		background-color: #171a70;
+	}
+
+	.topnav a,
+	.topnav span {
+		color: white;
+	}
+
+	.topnav a:hover,
+	.topnav a.active,
+	.topnav span:hover {
+		background-color: #000;
+		color: #f8bcd1;
+	}
+
+	.description {
+		background-color: rgba(248, 188, 209, 0.2);
+	}
+
+	.credit {
+		background-color: #171a70;
+	}
+
+	.c {
+		background-color: rgba(248, 188, 209, 0.2);
+	}
+
+	.button {
+		background-position-y: -0%;
+		background-image: linear-gradient(
+			180deg,
+			transparent 50%,
+			white 50%
+		) !important;
+		transition: all 0.2s ease;
+		background-size: auto 190%;
+		text-decoration: none;
+		padding: 20px;
+		margin: 20px;
+		height: 3em;
+		border-radius: 3px;
+		color: white;
+		display: inline-flex;
+		justify-content: space-evenly;
+	}
+
+	.button:hover {
+		background-color: white;
+		background-position-y: 100%;
+		color: #171a70;
+		transition: all 0.1s ease;
+	}
+
+	td {
+		background-color: rgba(248, 188, 209, 0.2);
+		padding: 5px 10px;
+	}
+}
+
+/*grain*/
+
+.grain {
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	pointer-event: none;
+	z-index: 300;
+	transform: translateZ(0);
+
+	&:before {
+		content: "";
+		top: 0rem;
+		left: 0rem;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		position: fixed;
+		background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+		opacity: 0.15;
+		pointer-events: none;
+		-webkit-animation: noise 1s steps(2) infinite;
+		animation: noise 1s steps(2) infinite;
+	}
+
+	@-webkit-keyframes noise {
+		to {
+			transform: translate3d(-7rem, 0, 0);
+		}
+	}
+
+	@keyframes noise {
+		0% {
+			transform: translate3d(0, 9rem, 0);
+		}
+		10% {
+			transform: translate3d(-1rem, -4rem, 0);
+		}
+		20% {
+			transform: translate3d(-8rem, 2rem, 0);
+		}
+		30% {
+			transform: translate3d(9rem, -9rem, 0);
+		}
+		40% {
+			transform: translate3d(-2rem, 7rem, 0);
+		}
+		50% {
+			transform: translate3d(-9rem, -4rem, 0);
+		}
+		60% {
+			transform: translate3d(2rem, 6rem, 0);
+		}
+		70% {
+			transform: translate3d(7rem, -8rem, 0);
+		}
+		80% {
+			transform: translate3d(-9rem, 1rem, 0);
+		}
+		90% {
+			transform: translate3d(6rem, -5rem, 0);
+		}
+		to {
+			transform: translate3d(-7rem, 0, 0);
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	* {
+		font-size: 1rem;
+		justify-content: center;
+	}
+
+	.profile_carousel {
+		width: 100vw;
+		height: 330px;
+	}
+
+	ul {
+		width: 97vw;
+		height: 310px;
+		left: 0;
+		right: 0;
+		bottom: -17px;
+	}
+
+	.c {
+		width: 90vw;
+		height: 250px;
+		margin: 0;
+	}
+
+	.pfp {
+		display: none;
+	}
+
+	.pfpDesc {
+		margin-left: 0px;
+		z-index: -1;
+	}
+}

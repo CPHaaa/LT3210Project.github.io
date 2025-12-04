@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <title>LT3210 Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="graphs.css">
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <div class="left">
+                <a class="" href="index.html">Home</a>
+                <a href="Aboutus.html">AboutUs</a>
+                <a href="Survey.html">Survey</a>
+                <a class="active">Graphs</a>
+            </div>
+            <div class="space borderless"></div>
+            <div class="right">
+                <span class="light" class="right" onclick="myFunction()"> &#x2600</span>
+            </div>
+        </div>
+    </header>
+    <main class="gain">
+        <!--grain is fked-->
+        <!-- Floating music notes
+        <div>
+            <div class="music-note" style="left: 10%; animation-delay: 9s;">♪</div>
+            <div class="music-note" style="left: 20%; animation-delay: 7s;">♫</div>
+            <div class="music-note" style="left: 30%; animation-delay: 12s;">♩</div>
+            <div class="music-note" style="left: 40%; animation-delay: 11s;">♪</div>
+            <div class="music-note" style="left: 50%; animation-delay: 3s;">♫</div>
+            <div class="music-note" style="left: 60%; animation-delay: 1s;">♩</div>
+            <div class="music-note" style="left: 70%; animation-delay: 6s;">♪</div>
+            <div class="music-note" style="left: 80%; animation-delay: 4s;">♫</div>-->
+
+        </div>
+        <section>
+            <div class="content top">
+                <div class="description">
+                    <div>
+                        <h3 class="subtitle neon">Methodology</h3>
+                        <p>Different stages were involved in order to conduct this study. Firstly, we decided to create
+                            the preliminary version of the website’s design. Secondly, with the assistance of Artificial
+                            Intelligence (AI), we developed a survey consisting of 20 questions, which would enable us
+                            to get deep and comprehensive responses. Thirdly, we designed different identities for three
+                            university students: Amy, Jacob, and Emma; and, finally, responses were collected through
+                            ten various Large Language Models (LLMs), and analysed afterwards. </p>
+                    </div>
+                    <h3 class="subtitle neon">Result & Discussion</h3>
+                    <div class="container">
+                        <div class="result">
+                            <h4>Amy</h4>
+                            <div class="figure">
+                                <figure>
+                                    <figcaption>Fig.1 - LLM's prediction of Amy's Big 5 personality traits</figcaption>
+                                    <img src="amyBig5.png" alt="Amy's Big 5 personality trait">
+                                </figure>
+                                <div class="figure">
+                                    <figure>
+                                        <figcaption>Fig.2 - LLM's prediction of Amy's music taste</figcaption>
+                                        <img src="amyMusicTaste.png" alt="Amy's music taste">
+                                    </figure>
+                                </div>
+
+                            </div>
+                            <div class="resultDesc">
+                                <p>The richest analysis was Gemma-3-1b-it, which provided specific artists (time periods
+                                    for classical music) for its suggested genres. Gemma-3-4b-it also provided detailed
+                                    subgenres in its suggestion (these subgenres were categorised into their broader
+                                    genres) and provided time periods for classical music only, but not its other
+                                    suggested genres.</p> <br>
+                                <p>Hallucinations occurred for both questions. Qwen2.5-1.5B misunderstood the questions
+                                    and requested clarification for all questions. Both Qwen2.5-0.5B and Gemma-3-270m-it
+                                    provided a repetition of the question on the question on big 5 personality traits.
+                                    Gemma-3-270m-it also listed 4 purposes of listening to music rather than the
+                                    questions’ 3 genres.</p><br>
+                                <p>The AIs’ analysis of personality’s relations to music taste was relatively accurate,
+                                    as Amy, who was overall rated moderately high in openness, was suggested genres with
+                                    high valence and depth of electronic and indie in line with current studies <a
+                                        href="https://journals.sagepub.com/doi/10.1177/1948550616641473#sec-8">(Greenberg
+                                        et al., 2016)</a>. This moderately high openness also explains the suggestion
+                                    for the not commonly liked genre of classical music <a
+                                        href="https://doi.org/10.1177/0305735697252003">(Rawlings & Ciancarelli,
+                                        1997)</a>.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <h4>Emma</h4>
+                            <div class="figure">
+                                <figure>
+                                    <figcaption>Fig.3 - LLM's prediction of Emma's Big 5 personality traits</figcaption>
+                                    <img src="emmaBig5.jpg" alt="Emma's Big 5 personality traits">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig.4 - LLM's prediction of Emma's music taste</figcaption>
+                                    <img src="emmaMusicTaste.jpg" alt="Emma's music taste">
+                                </figure>
+                            </div>
+                            <div class="figure">
+
+                            </div>
+                            <div class="resultDesc">
+                                <p>According to different LLM models ( Gemma-3-1b-it, Gemma 3-4b-it, Qwen2.5-0.5B,
+                                    Qwen2.5-3B, Qwen2.5-7B, Qwen2.5-14B, Yi-1.5-6B, Yi-1.5-9B), indie, rock, alternative
+                                    are the most frequently provided by LLM models, which are mentioned in 7 out of 8
+                                    LLM models. The second-highest music genre recommended by LLM models is electronic,
+                                    EDM, which is mentioned in 4 out of 8 models. And the following recommended genres
+                                    are pop and classical, both of them mentioned in 3 out of 8 models. Also, there are
+                                    errors in 2 LLM models, which did not reply effectively. So, the average music
+                                    genres provided by LLM models tend to be alternatives which match the tastes of
+                                    teenagers. Indie, rock, alternative are dominant in the responses, at nearly 80%,
+                                    the second highest is electronic, EDM, in 50%, and the following are pop and
+                                    classical, both at nearly 40%. This shows that the music genres of stimulated person
+                                    in various LLMs responses tend to indie and rock, which is a somewhat modern taste
+                                    in music.</p><br>
+                                <p>The richest responses were Qwen2.5-7B, Qwen2.5-14B and Yi-1.5-9B provided specific
+                                    music taste words such as horror/thriller music, emotive hardcore, etc. So, these
+                                    responses show the specific personality traits which are analysed by the LLM models.
+                                </p><br>
+                                <p>The poorest responses were Gemma-3-270m-it and Qwen2.5-1.5B answered ineffectively.
+                                    Both of them fail to provide the answers to the research questions. Therefore, the
+                                    responses show that both of these two LLM models could not provide meaningful data
+                                    and responses to users, which may be caused by the backward technologies of LLM
+                                    models.</p><br>
+                                <p>According to the scores on the Five Factors of Personality, we can observe that there
+                                    is some relationship between personality traits and music tastes. With higher scores
+                                    of openness and agreeableness in Big 5, music tastes tend to be emotional and
+                                    diverse, for example, classical and sad pop. Thus, it suggests that the personality
+                                    is receptive to different types of music, showing their curiosity.
+                                    Lower scores of extraversion in personality traits tend to avoid energetic music and
+                                    prefer gentle music types such as classical and indie, which shows that their
+                                    personality is introverted.</p>
+                                <br>
+                                <p>Moreover, it seems that there is no strong relationship between personality and
+                                    neuroticism. As the personality trait emphasises emotional instability that can not
+                                    correlate to rock and electronic.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <h4>Jacob</h4>
+                            <div class="figure">
+                                <figure>
+                                    <figcaption>Fig.5 - LLM's average prediction of Jacob's Big 5 personality trait
+                                    </figcaption>
+                                    <img src="jacobBig5.jpg" alt="Jacob's Big 5 personality trait">
+                                </figure>
+                                <figure>
+                                    <figcaption>Fig.6 - LLM's prediction of Jacob's music taste</figcaption>
+                                    <img src="jacobMusicTaste.jpg" alt="Jacob's music taste">
+                                </figure>
+                            </div>
+                            <div class="figure">
+
+                            </div>
+                            <div class="resultDesc">
+                                <p>According to the obtained answers, Jacob’s answers demonstrate consistent patterns. Overall, throughout all obtained LLM responses, he scored points that match the designed identity: on average, 4.75 points in Openness, 3.89 in Conscientiousness, 4.63 in Extraversion, 4.25 in Agreeableness, and 2.5 in Neuroticism were scored. </p><br><p>High scores in Extraversion and Openness are concordant with high-energy music genres, such as pop, rock, and electronic. High-level agreeableness and conscientiousness align with the wide variety of music genres: along with genres that were chosen frequently (pop, rock, electronic) by LLMs, unique genres such as indie with its subgenres, progressive rock, and metal were also included in the responses. Such a variety also matches the research results: according to <a href="https://www.verywellmind.com/music-and-personality-2795424#">Cherry (2025)</a>, people who have a versatile music taste tend to be more extraverted, agreeable, and conscientious. </p>
+                            </div>
+                        </div>
+                        <h4>Overall Result</h4>
+                        <p>Overall, various answers and interpretations were obtained from Large Language Models, as they have different characteristics. It could be noted that, based on the parameters of each model, LLMs gave responses of different levels of richness. In the following instance, a model with a larger number of parameters provides better reasoning with specific examples, whereas a model with fewer parameters provides little or no reasoning and constrained response:  </p>
+                        <table>
+                            <tr>
+                                <th>Questions</th>
+                                <th>Response of Qwen-2.5-0.5b</th>
+                                <th>Response of Gemma-3-4b: </th>
+                            </tr>
+                            <tr>
+                                <th>How well do the following words describe you?</th>
+                                <td>
+                                    <ul>
+                                        <li>Extraversion: Strongly Agree (5)</li>
+                                        <li>Conscientiousness: Strongly Agree (5)</li>
+                                        <li>Argeeableness: Strongly Agree (5)</li>
+                                        <li>Neuroticism: Strongly Agree (5)</li>
+                                        <li>Openness to Experience: Strongly Agree (5)</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Extraversion: 4 – I’m definitely outgoing and enjoy being around people,
+                                            especially with my engineering club.</li>
+                                        <li>Conscientiousness: 3 – I try to be organized, especially with my studies,
+                                            but sometimes I get a little distracted by cool projects or new music.</li>
+                                        <li>Agreeableness: 4 – I’m generally a pretty easygoing person and try to see
+                                            things from other people’s perspectives</li>
+                                        <li>Neuroticism: 2 – I’d say I’m pretty stable, not overly anxious. I can get
+                                            stressed about deadlines, but I handle it pretty well.</li>
+                                        <li>Openness to Experience: 5 – I’m always eager to try new things, explore
+                                            different ideas, and discover new music.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <div>
+                            <h3 class="subtitle neon">References</h3>
+                            <p>
+                                Cherry, K. (2025). Music Preferences and Your Personality. Verywell Mind. <a href="https://www.verywellmind.com/music-and-personality-2795424#">https://www.verywellmind.com/music-and-personality-2795424#</a>
+                                Greenberg, D. M., Kosinski, M., Stillwell, D. J., Monteiro, B. L., Levitin, D. J., &
+                                Rentfrow, P. J. (2016). The Song Is You. Social Psychological and Personality Science.
+                                <a
+                                    href="https://doi.org/10.1177/1948550616641473">https://doi.org/10.1177/1948550616641473</a>
+                            </p>
+                            <p>Rawlings, D., & Ciancarelli, V. (1997). Music Preference and the Five-Factor Model of the
+                                NEO Personality Inventory. Psychology of Music. <a
+                                    href="https://doi.org/10.1177/0305735697252003">https://doi.org/10.1177/0305735697252003</a>
+                            </p>
+                        </div>
+                        <h3 class="subtitle neon">Acknowledgement</h3>
+                        <table class="rounded-corners">
+                            <tr>
+                                <th scope="row">Aruzhan SHYNGAZIYEVA<br> <i>58628883</i></th>
+                                <td>Introduction, Methodology, survey creation  through CSV file, LLM’s response analysis  </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">KWOK Sin Man <br><i>58239945</i></th>
+                                <td>Introduction, LLM’s response analysis, code for about us.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">CHIU Pak Hei <br><i>59297497</i></th>
+                                <td>Code for index, survey and graph pages, LLM’s response analysis. 
+
+ </td>
+                            </tr>
+                        </table>
+                        <h3 class="subtitle neon">Declaration of the use of GenAI:</h3>
+                        <p> As allowed by the assignment requirements, I HAVE used AI tools (Deepseek) for the below when I was completing my assignment: </p>
+<ol style="padding-left: 20px;">
+<li>Generating non-textual materials (such as images, PowerPoint slides, videos) to incorporate into my assignment. </li>
+<li>Drafting/refining an outline to organize my thoughts</li>
+</ol>
+
+                    </div>
+        </section>
+    </main>
+    <footer>
+        <div class="credit">By Aruzhan SHYNGAZIYEVA 58628883, Kwok Sin Man 58239945 & Chiu Pak Hei 59297497</div>
+    </footer>
+
+</body>
+
+</html>
