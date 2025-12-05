@@ -338,7 +338,7 @@ img {
 	400px;
 	height: 250px;
 	object-fit: fill;
-	padding: 5px;
+	padding: 10px;
 }
 
 h4 {
@@ -605,4 +605,5 @@ a{
 		z-index: -1;
 	}
 }
+
 
