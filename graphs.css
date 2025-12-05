@@ -326,6 +326,7 @@ li::scroll-marker:target-current {
 	flex-direction: row;
 	grid-area: figure;
 	width: 300px;
+	padding:5px;
 }
 
 figcaption {
@@ -338,7 +339,7 @@ img {
 	400px;
 	height: 250px;
 	object-fit: fill;
-	padding: 10px;
+	padding: 5px;
 }
 
 h4 {
@@ -605,5 +606,6 @@ a{
 		z-index: -1;
 	}
 }
+
 
 
