@@ -326,12 +326,13 @@ li::scroll-marker:target-current {
 	flex-direction: row;
 	grid-area: figure;
 	width: 300px;
-	padding:5px;
+	
 }
 
 figcaption {
 	font-size: 0.9em;
 	font-style: italic;
+	padding:5px;
 }
 
 img {
@@ -606,6 +607,7 @@ a{
 		z-index: -1;
 	}
 }
+
 
 
 
